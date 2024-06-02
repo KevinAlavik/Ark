@@ -1,0 +1,64 @@
+# Ignore build directory
+/build/
+/bin/
+/CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore executables
+*.exe
+*.out
+*.app
+*.bin
+
+# Ignore object files
+*.o
+*.obj
+*.lo
+*.la
+
+# Ignore libraries
+*.lib
+*.a
+*.la
+*.lo
+*.lai
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Ignore logs and debugging files
+*.log
+*.trace
+*.dSYM/
+*.stackdump
+*.core
+
+# Ignore generated files
+*.gen.c
+*.gen.h
+*.tmp
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Ignore other files
+*.orig
+*.rej
+*.bak
+*.old
+*.patch
+*.diff
+
+# Ignore additional files that may be generated
+compile_commands.json
