@@ -13,7 +13,8 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 find_package(OpenSSL REQUIRED)
 
 include_directories(${OPENSSL_INCLUDE_DIR})
-file(GLOB PROJECT_SOURCES ${PROJECT_SOURCE_DIR}/*.c)
+
+file(GLOB_RECURSE PROJECT_SOURCES ${PROJECT_SOURCE_DIR}/src/*.c)
 
 add_executable(ark ${PROJECT_SOURCES})
 target_link_libraries(ark OpenSSL::SSL OpenSSL::Crypto)
